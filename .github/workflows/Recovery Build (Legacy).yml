@@ -3,15 +3,15 @@ name: Recovery Build (Legacy)
 on:
   workflow_dispatch:
     inputs:
-      MANIFEST_URL:
+      MANIFEST_URL: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni'
         description: 'MANIFEST_URL (if want to use SSH keys, use git@github.com:XXXXX)'
         required: true
         default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni'
-      MANIFEST_BRANCH:
+      MANIFEST_BRANCH: 'twrp-8.1'
         description: 'MANIFEST_BRANCH'
         required: true
         default: 'twrp-7.1'
-      DEVICE_TREE_URL:
+      DEVICE_TREE_URL: 'device/sts-tottori/TAB-A04-BR3'
         description: 'DEVICE_TREE_URL'
         required: true
         default: 'https://github.com/ycly2333/android_device_EEBBK_H3000S-twrp'
@@ -22,11 +22,11 @@ on:
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/EEBBK/H3000S'
+        default: 'device/sts-tottori/TAB-A04-BR3'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
-      COMMON_PATH:
+      COMMON_PATH: 'device/sts-tottori/TAB-A04-BR3-common'
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
       DEVICE_NAME:
