@@ -2,7 +2,6 @@ name: Recovery Build
 
 on:
   workflow_dispatch:
-    inputs:
       MANIFEST_URL: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git'
         description: 'MANIFEST_URL (if want to use SSH keys, use git@github.com:XXXXX)'
         required: true
